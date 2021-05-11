@@ -26,5 +26,5 @@
 		Password
 		<input type="password" bind:value={password} />
 	</label>
-	<button type="submit">Register </button>
+	<button type="submit">Login </button>
 </form>

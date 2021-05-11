@@ -1,7 +1,7 @@
 import { createClient } from "nhost-js-sdk";
 
 const nhostClient = createClient({
-  baseURL: "http://localhost:9001",
+  baseURL: "https://backend-e1981476.nhost.app",
 })
 
 const auth = nhostClient.auth;
