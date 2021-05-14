@@ -1,7 +1,7 @@
 import { createClient } from "nhost-js-sdk";
 
 const nhostClient = createClient({
-  baseURL: "https://backend-e1981476.nhost.app",
+  baseURL: import.meta.env.VITE_NHOST_BASE_URL,
 })
 
 const auth = nhostClient.auth;
