@@ -1,39 +1,5 @@
 <script>
-	import { auth } from '../utils/nhost';
-
-	let name;
-	let email;
-	let password;
-
-	function submit() {
-		auth
-			.register({
-				email,
-				password,
-				options: {
-					userData: {
-						display_name: name
-					}
-				}
-			})
-			.then((data) => {
-				console.log('data', data);
-			});
-	}
+	import RegisterForm from '$lib/forms/register-form.svelte';
 </script>
 
-<form on:submit|preventDefault={submit}>
-	<label>
-		Name
-		<input type="text" bind:value={name} />
-	</label>
-	<label>
-		Email
-		<input type="email" bind:value={email} />
-	</label>
-	<label>
-		Password
-		<input type="password" bind:value={password} />
-	</label>
-	<button type="submit">Register </button>
-</form>
+<RegisterForm />
