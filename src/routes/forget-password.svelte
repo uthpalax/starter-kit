@@ -1,5 +1,5 @@
 <script>
-	import ForgetPassword from '$lib/forms/forget-password.svelte';
+	import ForgetPasswordForm from '$lib/forms/forget-password-form.svelte';
 </script>
 
-<ForgetPassword />
+<ForgetPasswordForm />

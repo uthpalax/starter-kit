@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { auth } from '../utils/nhost';
 	import ProtectedRoute from '$lib/ProtectedRoute.svelte';
-	import ChangePasswod from '$lib/forms/change-password.svelte';
+	import ChangePasswodForm from '$lib/forms/change-password-form.svelte';
 </script>
 
 <ProtectedRoute>
@@ -14,5 +14,5 @@
 			});
 		}}>Logout</button
 	>
-	<ChangePasswod />
+	<ChangePasswodForm />
 </ProtectedRoute>
