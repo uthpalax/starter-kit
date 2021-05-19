@@ -21,6 +21,7 @@
 			id={name}
 			{placeholder}
 			on:input={handleInput}
+			{...$$restProps}
 		/>
 	</div>
 </div>
