@@ -33,8 +33,8 @@
 	<p class="text-red-400 py-2">{error.message}</p>
 {/if}
 <form class="space-y-2" on:submit|preventDefault={submit}>
-	<Input label="Name" type="text" bind:value={name} />
-	<Input label="Email" type="email" bind:value={email} />
-	<Input label="Password" type="password" bind:value={password} />
+	<Input label="Name" name="name" type="text" bind:value={name} />
+	<Input label="Email" name="email" type="email" bind:value={email} />
+	<Input label="Password" name="password" type="password" bind:value={password} />
 	<button type="submit">Register </button>
 </form>
