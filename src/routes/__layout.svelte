@@ -1,20 +1,11 @@
 <script>
+	import Nav from '$lib/nav.svelte';
 	import '../app.postcss';
 </script>
 
-<nav>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
-	<a href="/profile">Profile</a>
-	<a href="/register">Register</a>
-	<a href="/login">Login</a>
-</nav>
-<main>
-	<slot />
+<main class="container mx-auto">
+	<Nav />
+	<div class="pt-4">
+		<slot />
+	</div>
 </main>
-
-<style>
-	main {
-		padding: 1rem;
-	}
-</style>

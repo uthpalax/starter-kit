@@ -22,7 +22,6 @@
 	}
 </script>
 
-<h1>Login</h1>
 {#if error}
 	<p class="text-red-400 py-2">{error.message}</p>
 {/if}

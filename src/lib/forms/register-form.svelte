@@ -28,7 +28,6 @@
 	}
 </script>
 
-<h1>Register</h1>
 {#if error}
 	<p class="text-red-400 py-2">{error.message}</p>
 {/if}
@@ -36,5 +35,9 @@
 	<Input label="Name" type="text" bind:value={name} />
 	<Input label="Email" type="email" bind:value={email} />
 	<Input label="Password" type="password" bind:value={password} />
-	<button type="submit">Register </button>
+	<div class="pt-2">
+		<button class="py-2 px-4 text-white bg-gray-700 rounded-md shadow-sm" type="submit"
+			>Register
+		</button>
+	</div>
 </form>
