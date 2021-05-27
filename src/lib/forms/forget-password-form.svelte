@@ -12,13 +12,12 @@
 	}
 </script>
 
-<h1 class="text-xl my-2">Forget password</h1>
 {#if error}
 	<p class="text-red-400 py-2">{error.message}</p>
 {/if}
 <form class="space-y-3" on:submit|preventDefault={submit}>
 	<Input label="Email" name="email" type="email" bind:value={email} />
-	<div class="mt-2">
+	<div class="pt-2">
 		<button type="submit" class="py-2 px-4 shadow-sm rounded-md bg-gray-700 text-white"
 			>Forget password</button
 		>
