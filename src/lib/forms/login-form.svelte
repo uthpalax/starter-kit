@@ -28,5 +28,7 @@
 <form class="space-y-2" on:submit|preventDefault={submit}>
 	<Input label="Email" name="email" type="email" bind:value={email} required />
 	<Input label="Password" name="password" type="password" bind:value={password} required />
-	<button type="submit">Login </button>
+	<button class="py-2 px-4 text-white bg-gray-700 rounded-md shadow-sm" type="submit">
+		Login
+	</button>
 </form>
